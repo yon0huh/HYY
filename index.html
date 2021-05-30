@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href = "https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel = "stylesheet" href = "./style.css">
+    <link rel = "stylesheet" href = "./style1.css">
     <script src = "./jquery-3.6.0.min.js"></script>
     <!--ie8Gallery CSS-->
     <link rel="stylesheet" type="text/css" href="./dist/css/ie8gallery.css">
@@ -18,18 +19,7 @@
 </script>
     <title>Home | Huh YeonYoung</title>
     <style>
-        h1{
-            padding-top: 100px; margin-left: 50px;
-        }
-        .imga {
-                float: left;
-            }
-        p{
-            padding-top: 10px;
-        }
-        .subheading{
-            padding-top: 70px;
-        }
+
     </style>
 </head>
 <body>
@@ -39,7 +29,7 @@
     </div>
     <ul class="nav-links">
         <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
+        <li><a href="#About">About Me</a></li>
         <li><a href="#Dasom">Dasom</a></li>
         <li><a href="#">Work</a></li>
     </ul>
@@ -51,23 +41,30 @@
 </nav>
 <script src="app.js"></script>
 <div>
-    <h1 id = "Home">Home</h1>
-    <img class = "imga" src ="./profile.jpg" alt = "profile" width="400px">
-    <h2 class = "subheading">self-introduction</h2>
-    <p>My friend drew a picture for me.</p>
-    <p>I am a student majoring in computer engineering at Kangwon National University.</p>
-    <p>My goal is to become an artificial intelligence expert.</p>
-    <p>I was born and raised in Seoul.</p>          
-    <p>I have mom, dad, and older brother.</p>     
-    <p>I can live well without feeling stuffy even if I don't go out of the house often.</p> 
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <div class = "bs-docs-section">
+         <div class = "container">
+            <h1 id = "Home">Home</h1>
+            <div class = "row">
+                <div class = "col-md-4">
+                    <img class = "imga" src ="./profile.jpg" alt = "profile" width="400px">
+                </div>
+                <div calss = "col-md-8">
+                    <h2 class = "subheading">self-introduction</h2>
+                        <p>My friend drew a picture for me.</p>
+                        <p>I am a student majoring in computer engineering at Kangwon National University.</p>
+                        <p>My goal is to become an artificial intelligence expert.</p>
+                        <p>I was born and raised in Seoul.</p>          
+                        <p>I have mom, dad, and older brother.</p>     
+                        <p>I can live well without feeling stuffy even if I don't go out of the house often.</p> 
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div>
-    <h1 id = "About">About</h1>
+    <div class = "bs-docs-section">
+    <h1 id = "About">About Me</h1>
         <h2 class = "subheading">HOBBY</h2>
         <p>My hobby is watching the same movie several times. I don't have many favorite movie genres, so I watch interesting movies over and over again. I usually watch Disney animation or comedy movies. It's good to be able to focus on other things every time I watch a movie. If I watch the same movie several times, I can understand the movie better, and I can see the small details that I didn't see at first. For example, Olaf was so cute in Frozen 2 that I watched movies more than five times in the movie theater. I haven't seen many movies lately because I haven't been to the movie theater often, but I've seen the movie 'Soul' three times. If I watch a movie once and think it's fun, I watch it at least twice in the theater. I also make photo tickets for movies that I watched as a secondary hobby.</p>
         <h2 class = "subheading">Favorite movies</h2>
@@ -97,32 +94,35 @@
                 </tr>
             </tbody>
         </table>
+    </div>
 </div>
 <div>
+    <div class = "bs-docs-section">
     <h1 id = "Dasom">Dasom</h1>
         <img class = "imga" src = "./Dasom1.JPG" alt = "Dasom" width="400px"></image>
-        <h2 class = "subheading">About</h2>
-        <p>As you can see from the picture, Dasom is my dog. Dasom is so cute, so I decided to make a page for Dasom.</p>
-        <h2 class = "subheading">Information</h2>
-        <p>Name: Kim Dasom</p>
-        <p>Birth: May 9, 2012</p>
-        <p>Ancestry: Gunsan</p>
-        <p>Hobby: Eating, sleeping</p>
-        <p>Favorite things: Dental Gum, toy with sound</p>
-        <br>
-        <br>
-        <h2 class = "subheading">Gallery</h2>
-        <div class="thumbs">
-           <img class="thumb" src="./Dasom2.JPG" data-img-src="./Dasom2.JPG" height="100">
-            <img class="thumb" src="./Dasom3.jpg" data-img-src="./Dasom3.jpg" width="100">
-            <img class="thumb" src="./Dasom4.jpg" data-img-src="./Dasom4.jpg" width="200">
-            <img class="thumb" src="./Dasom5.jpg" data-img-src="./Dasom5.jpg" width="200">
-            <img class="thumb" src="./Dasom6.jpg" data-img-src="./Dasom6.jpg" width="200">
-            <img class="thumb" src="./Dasom7.jpg" data-img-src="./Dasom7.jpg" width="200">
-            <img class="thumb" src="./Dasom8.jpg" data-img-src="./Dasom8.jpg" width="200">
-            <img class="thumb" src="./Dasom9.jpg" data-img-src="./Dasom9.jpg" width="200">
-            <img class="thumb" src="./Dasom10.jpg" data-img-src="./Dasom10.jpg" width="200">
-        </div>
+            <h2 class = "subheading">About</h2>
+            <p>As you can see from the picture, Dasom is my dog. Dasom is so cute, so I decided to make a page for Dasom.</p>
+            <h2 class = "subheading">Information</h2>
+            <p>Name: Kim Dasom</p>
+            <p>Birth: May 9, 2012</p>
+            <p>Ancestry: Gunsan</p>
+            <p>Hobby: Eating, sleeping</p>
+            <p>Favorite things: Dental Gum, toy with sound</p>
+            <br>
+            <h2 class = "subheading">Gallery</h2>
+                <div class="thumbs">
+                    <img class="thumb" src="./Dasom2.JPG" data-img-src="./Dasom2.JPG" height="100">
+                    <img class="thumb" src="./Dasom3.jpg" data-img-src="./Dasom3.jpg" width="100">
+                    <img class="thumb" src="./Dasom4.jpg" data-img-src="./Dasom4.jpg" width="200">
+                    <img class="thumb" src="./Dasom5.jpg" data-img-src="./Dasom5.jpg" width="200">
+                    <img class="thumb" src="./Dasom6.jpg" data-img-src="./Dasom6.jpg" width="200">
+                    <img class="thumb" src="./Dasom7.jpg" data-img-src="./Dasom7.jpg" width="200">
+                    <img class="thumb" src="./Dasom8.jpg" data-img-src="./Dasom8.jpg" width="200">
+                    <img class="thumb" src="./Dasom9.jpg" data-img-src="./Dasom9.jpg" width="200">
+                    <img class="thumb" src="./Dasom10.jpg" data-img-src="./Dasom10.jpg" width="200">
+                    <img class="thumb" src="./Dasom11.jpg" data-img-src="./Dasom11.jpg" width="200">
+                </div>
+    </div>
 </div>
 </body>
 </html>
