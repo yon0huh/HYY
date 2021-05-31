@@ -46,6 +46,10 @@ dt{
     h1{
         padding-top: 150px;
     }
+    #c, .e {
+        margin-left: 430px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
