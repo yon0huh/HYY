@@ -19,6 +19,34 @@
         });
 </script>
 <script>
+    $(document).ready(function(){
+        $("#m1").click(function(){
+            $("#menu_home").show();
+            $("#menu_aboutme").hide();
+            $("#menu_dasom").hide();
+            $("#menu_bucket").hide();
+        });
+        $("#m2").click(function(){
+            $("#menu_home").hide();
+            $("#menu_aboutme").show();
+            $("#menu_dasom").hide();
+            $("#menu_bucket").hide();
+        });
+        $("#m3").click(function(){
+            $("#menu_home").hide();
+            $("#menu_aboutme").hide();
+            $("#menu_dasom").show();
+            $("#menu_bucket").hide();
+        });
+        $("#m4").click(function(){
+            $("#menu_home").hide();
+            $("#menu_aboutme").hide();
+            $("#menu_dasom").hide();
+            $("#menu_bucket").show();
+        });
+    });
+</script>
+<script>
 $(document).ready(function(){
     $('li').hover(function(){
         $(this).css({
@@ -54,10 +82,10 @@ $(document).ready(function(){
         <h4>Yeonyoung Huh</h4>
     </div>
     <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About Me</a></li>
-        <li><a href="#Dasom">Dasom</a></li>
-        <li><a href="#Bucket">Bucket List</a></li>
+        <li id = "m1"><a href="#Home">Home</a></li>
+        <li id="m2"><a href="#About">About Me</a></li>
+        <li id="m3"><a href="#Dasom">Dasom</a></li>
+        <li id="m4"><a href="#Bucket">Bucket List</a></li>
     </ul>
        <div class="burger">
         <div class="line1"></div>
@@ -66,7 +94,7 @@ $(document).ready(function(){
     </div>
 </nav>
 <script src="app.js"></script>
-<div>
+<div id = "menu_home" display="">
     <div class = "bs-docs-section">
         <div class = "container">
         <h1 id = "Home">Home</h1>
@@ -82,7 +110,7 @@ $(document).ready(function(){
                             <p>I was born and raised in Seoul.</p>     
                             <p>I can live well without feeling stuffy even if I don't go out of the house often.</p>
                             <p>I go to bed at 7 a.m. when it's time for others to wake up. 🛌</p> 
-                            <p>I like animals (especially dogs) very much. 🐶</p>
+                            <p  id = "a">I like animals (especially dogs) very much. 🐶</p>
                         <br>
                     </div>
             </div>
@@ -90,7 +118,7 @@ $(document).ready(function(){
   
     </div>
 </div>
-<div>
+<div id = "menu_aboutme" style="display:none;">
     <div class = "bs-docs-section">
     <h1 id = "About">About Me</h1>
         <h2 class = "subheading">HOBBY</h2>
@@ -177,10 +205,36 @@ $(document).ready(function(){
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <img class = "imga" src = "./Avatar.jpg" alt = "Avatar" width="200px"></image>
+                        <h4 class="mv">🎬 AVATAR</h4>
+                        <br>
+                        <div class ="mvinfo">
+                            <dl>
+                                <dt>YEAR</dt>
+                                <dd>2009</dd>
+                            </dl>
+                            <dl>
+                                <dt>GENRE</dt>
+                                <dd>Sci-fi</dd>
+                            </dl>
+                            <dl>
+                                <dt>RUN TIME</dt>
+                                <dd>2h 42m</dd>
+                            </dl>
+                            <dl>
+                                <dt>ABOUT</dt>
+                                <dd>It's a movie I haven't seen, but my friend keeps telling me to watch it. I put it on the list for that friend.</dd>
+                            </dl>
+                            <br>
+                        </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <h2 class="subheading">Specialty 👩‍🎨👩‍🔧</h2>
-        <p>I'm good at drawing. I am not good at drawing by thinking or creating things in my head, but I am good at drawing by looking at them. Especially, I am good at drawing characters like SpongeBob. Also, I like to make and assemble things. I liked to assemble Gundam or make something by myself since elementary school. Now that I think about it, it has nothing to do with my major.</p>
+        <p id="a" >I'm good at drawing. I am not good at drawing by thinking or creating things in my head, but I am good at drawing by looking at them. Especially, I am good at drawing characters like SpongeBob. Also, I like to make and assemble things. I liked to assemble Gundam or make something by myself since elementary school. Now that I think about it, it has nothing to do with my major.</p>
         <table>
             <tbody>
                 <tr>
@@ -193,7 +247,7 @@ $(document).ready(function(){
     </div>
 
 </div>
-<div>
+<div id="menu_dasom" style="display: none;">
     <div class = "bs-docs-section">
     <h1 id = "Dasom">Dasom 🐶</h1>
     <br>
@@ -234,24 +288,26 @@ $(document).ready(function(){
                     <img class="thumb" src="./Dasom9.jpg" data-img-src="./Dasom9.jpg" width="200">
                     <img class="thumb" src="./Dasom10.jpg" data-img-src="./Dasom10.jpg" width="200">
                     <img class="thumb" src="./Dasom11.jpg" data-img-src="./Dasom11.jpg" width="200">
+                    <p id="a"></p>
                 </div>
 
 </div>
 </div>
+<div id = "menu_bucket" style="display: none;">
 <div class = "bs-docs-section">
         <h1 id = "Bucket">Bucket List 📜</h1>
         <br>
         <ul class="a">
             <li class="b">Around the World 🧳</li>
             <li class="b">Learning musical instruments such as piano, violin, etc. 🎹🎻</li>
-            <li class="b">Playing discus with Dasom (Dasom is afraid of disk) 🥏</li>
+            <li class="b">Playing discus with Dasom (Dasom is afraid of the disc) 🥏</li>
             <li class="b">Paragliding 🪂</li>
             <li class="b">Riding a Roller Coaster 🎢</li>
             <li class="b">Swimming Without Tubes 🏊</li>
             <li class="b">See the Aurora</li>
             <li class="b">and so on ...</li>
         </ul>
- 
+    </div>
 </div>
 <footer class="footer">
     <p class="footer">@2021 Yeonyoung Huh. All rights reserved.</p>
