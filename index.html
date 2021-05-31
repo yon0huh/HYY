@@ -3,7 +3,7 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Commvinfotible" content="ie=edge">
     <link href = "https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel = "stylesheet" href = "./style.css">
     <link rel = "stylesheet" href = "./style1.css">
@@ -12,10 +12,36 @@
     <link rel="stylesheet" type="text/css" href="./dist/css/ie8gallery.css">
     <!--ie9Gallery JS-->
     <script type="text/javascript" src="./dist/js/ie8gallery.js"></script>
+    <script src="app1.js"></script>
 <script>
         $(document).ready(function () {
         $(".thumbs").ie8Gallery();
         });
+</script>
+<script>
+$(document).ready(function(){
+    $('li').hover(function(){
+        $(this).css({
+            color: 'tomato'
+        });
+    }, function () {
+        $(this).css({
+            color: ''
+        });
+    });
+});
+$(document).ready(function(){
+    $('li').hover(function(){
+        $(this).css({
+            color: 'tomato'
+        });
+    }, function () {
+        $(this).css({
+            color: ''
+        });
+    });
+});
+</script>
 </script>
     <title>Home | Huh YeonYoung</title>
     <style>
@@ -31,7 +57,7 @@
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About Me</a></li>
         <li><a href="#Dasom">Dasom</a></li>
-        <li><a href="#">Work</a></li>
+        <li><a href="#Bucket">Bucket List</a></li>
     </ul>
        <div class="burger">
         <div class="line1"></div>
@@ -42,24 +68,26 @@
 <script src="app.js"></script>
 <div>
     <div class = "bs-docs-section">
-         <div class = "container">
-            <h1 id = "Home">Home</h1>
+        <div class = "container">
+        <h1 id = "Home">Home</h1>
             <div class = "row">
-                <div class = "col-md-4">
-                    <img class = "imga" src ="./profile.jpg" alt = "profile" width="400px">
-                </div>
-                <div calss = "col-md-8">
-                    <h2 class = "subheading">self-introduction</h2>
-                        <p>My friend drew a picture for me.</p>
-                        <p>I am a student majoring in computer engineering at Kangwon National University.</p>
-                        <p>My goal is to become an artificial intelligence expert.</p>
-                        <p>I was born and raised in Seoul.</p>          
-                        <p>I have mom, dad, and older brother.</p>     
-                        <p>I can live well without feeling stuffy even if I don't go out of the house often.</p> 
-                    <br>
-                </div>
+                    <div class = "col-md-4">
+                        <img class = "imga" src ="./profile.jpg" alt = "profile" width="400px">
+                    </div>
+                    <div calss = "col-md-8">
+                        <h2 class = "subheading">self-introduction</h2>
+                            <p>My friend drew a picture for me.</p>
+                            <p>I am a student majoring in computer engineering at Kangwon National University.</p>
+                            <p>My goal is to become an artificial intelligence expert. 👩‍💻</p>
+                            <p>I was born and raised in Seoul.</p>     
+                            <p>I can live well without feeling stuffy even if I don't go out of the house often.</p>
+                            <p>I go to bed at 7 a.m. when it's time for others to wake up. 🛌</p> 
+                            <p>I like animals (especially dogs) very much. 🐶</p>
+                        <br>
+                    </div>
             </div>
         </div>
+  
     </div>
 </div>
 <div>
@@ -67,49 +95,134 @@
     <h1 id = "About">About Me</h1>
         <h2 class = "subheading">HOBBY</h2>
         <p>My hobby is watching the same movie several times. I don't have many favorite movie genres, so I watch interesting movies over and over again. I usually watch Disney animation or comedy movies. It's good to be able to focus on other things every time I watch a movie. If I watch the same movie several times, I can understand the movie better, and I can see the small details that I didn't see at first. For example, Olaf was so cute in Frozen 2 that I watched movies more than five times in the movie theater. I haven't seen many movies lately because I haven't been to the movie theater often, but I've seen the movie 'Soul' three times. If I watch a movie once and think it's fun, I watch it at least twice in the theater. I also make photo tickets for movies that I watched as a secondary hobby.</p>
-        <h2 class = "subheading">Favorite movies</h2>
+        <h2 class = "subheading">Favorite movies 📽</h2>
         <table>
             <tbody>
                 <tr>
                     <td>
                         <img class = "imga" src ="./KamomeDiner.jpg" alt = "Kamome Diner" width="200px">
-                        <h4>Kamome Diner, かもめ食堂, 2006</h4>
-                        <p>It's a quiet and peaceful atmosphere, but there are some funny parts. I recommend this movie to everyone around me.</p>
+                        <br>
+                        <h4 class="mv">🎬 Kamome Diner, かもめ食堂, 2006</h4>
+                        <br>
+                        <div class = "mvinfo">
+                        <dl>
+                            <dt>YEAR</dt>
+                            <dd>2006</dd>
+                        </dl>
+                        <dl>
+                            <dt>GENRE</dt>
+                            <dd>Comedy, Drama</dd>
+                        </dl>
+                        <dl>
+                            <dt>RUN TIME</dt>
+                            <dd>1h 42m</dd>
+                        </dl>
+                        <dl>
+                            <dt>ABOUT</dt>
+                            <dd>It's a quiet and peaceful atmosphere, but there are some funny parts. I recommend this movie to everyone around me. </dd>
+                        </dl>
+                        <br>
+                    </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <img class = "imga" src = "./GreatestShowman.jpg" alt = "TheGreatestShowman" width="200px"></image>
-                        <h4>The Greatest Showman, 2017</h4>
-                        <p>I like musical movies, and this movie is memorable because I watched it in Korea and watched it at a movie theater in Japan a few years ago when I went to Japan with my friend.</p>
-                    
+                        <h4 class="mv">🎬 The Greatest Showman, 2017</h4>
+                        <br>
+                        <div class = "mvinfo">
+                            <dl>
+                                <dt>YEAR</dt>
+                                <dd>2017</dd>
+                            </dl>
+                            <dl>
+                                <dt>GENRE</dt>
+                                <dd>Musical/Drama</dd>
+                            </dl>
+                            <dl>
+                                <dt>RUN TIME</dt>
+                                <dd>1h 46m</dd>
+                            </dl>
+                            <dl>
+                                <dt>ABOUT</dt>
+                                <dd>I like musical movies, and this movie is memorable because I watched it in Korea and watched it at a movie theater in Japan a few years ago when I went to Japan with my friend. </dd>
+                            </dl>
+                            <br>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <img class = "imga" src = "./InsideOut.jpg" alt = "InsideOut" width="200px"></image>
-                        <h4>Inside Out, 2015</h4>
-                        <p>It's a movie that makes me think a lot. The material was unique and the color of the movie was very good.</p>
+                        <h4 class="mv">🎬 Inside Out, 2015</h4>
+                        <br>
+                        <div class ="mvinfo">
+                            <dl>
+                                <dt>YEAR</dt>
+                                <dd>2015</dd>
+                            </dl>
+                            <dl>
+                                <dt>GENRE</dt>
+                                <dd>Family/Comedy</dd>
+                            </dl>
+                            <dl>
+                                <dt>RUN TIME</dt>
+                                <dd>1h 42m</dd>
+                            </dl>
+                            <dl>
+                                <dt>ABOUT</dt>
+                                <dd>It's a movie that makes me think a lot. The material was unique and the color of the movie was very good.</dd>
+                            </dl>
+                            <br>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="subheading">Specialty 👩‍🎨👩‍🔧</h2>
+        <p>I'm good at drawing. I am not good at drawing by thinking or creating things in my head, but I am good at drawing by looking at them. Especially, I am good at drawing characters like SpongeBob. Also, I like to make and assemble things. I liked to assemble Gundam or make something by myself since elementary school. Now that I think about it, it has nothing to do with my major.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
 </div>
 <div>
     <div class = "bs-docs-section">
-    <h1 id = "Dasom">Dasom</h1>
+    <h1 id = "Dasom">Dasom 🐶</h1>
+    <br>
+    <div class="dasom">
         <img class = "imga" src = "./Dasom1.JPG" alt = "Dasom" width="400px"></image>
-            <h2 class = "subheading">About</h2>
-            <p>As you can see from the picture, Dasom is my dog. Dasom is so cute, so I decided to make a page for Dasom.</p>
-            <h2 class = "subheading">Information</h2>
-            <p>Name: Kim Dasom</p>
-            <p>Birth: May 9, 2012</p>
-            <p>Ancestry: Gunsan</p>
-            <p>Hobby: Eating, sleeping</p>
-            <p>Favorite things: Dental Gum, toy with sound</p>
-            <br>
-            <h2 class = "subheading">Gallery</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2 class = "subhead">About</h2>
+                        <p class="d">As you can see from the picture, Dasom is my dog. Actually, since this assignment came out, I thought I should make a page for Dasom. Because Dasom is so cute. I also have an Instagram account for Dasom. Of course, it's a private account that only my family can see. It's already been 9 years since I met Dasom on July 14, 2012.</p>            
+                        <br>                    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 class = "subhead">Profile</h2>
+                        <p class="d">Name : Kim Dasom</p>
+                        <p class="d">Birth : May 9, 2012</p>
+                        <p class="d">Ancestry : Gunsan</p>
+                        <p class="d">Hobby : Eating, sleeping</p>
+                        <p class="d">Favorite things : Dental Gum, toy with sound</p>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+            <h2 class = "subheading">Favorite pictures 📸</h2>
                 <div class="thumbs">
                     <img class="thumb" src="./Dasom2.JPG" data-img-src="./Dasom2.JPG" height="100">
                     <img class="thumb" src="./Dasom3.jpg" data-img-src="./Dasom3.jpg" width="100">
@@ -122,7 +235,26 @@
                     <img class="thumb" src="./Dasom10.jpg" data-img-src="./Dasom10.jpg" width="200">
                     <img class="thumb" src="./Dasom11.jpg" data-img-src="./Dasom11.jpg" width="200">
                 </div>
-    </div>
+
 </div>
+</div>
+<div class = "bs-docs-section">
+        <h1 id = "Bucket">Bucket List 🧾</h1>
+        <br>
+        <ul class="a">
+            <li class="b">Around the World 🧳</li>
+            <li class="b">Learning musical instruments such as piano, violin, etc. 🎹🎻</li>
+            <li class="b">Playing discus with Dasom (Dasom is afraid of disk) 🥏</li>
+            <li class="b">Paragliding 🪂</li>
+            <li class="b">Riding a Roller Coaster 🎢</li>
+            <li class="b">Swimming Without Tubes 🏊</li>
+            <li class="b">See the Aurora</li>
+            <li class="b">and so on ...</li>
+        </ul>
+ 
+</div>
+<footer class="footer">
+    <p class="footer">@2021 Yeonyoung Huh. All rights reserved.</p>
+</footer>
 </body>
 </html>
