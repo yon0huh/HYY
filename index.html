@@ -24,25 +24,25 @@
             $("#menu_home").show();
             $("#menu_aboutme").hide();
             $("#menu_dasom").hide();
-            $("#menu_bucket").hide();
+            $("#menu_contact").hide();
         });
         $("#m2").click(function(){
             $("#menu_home").hide();
             $("#menu_aboutme").show();
             $("#menu_dasom").hide();
-            $("#menu_bucket").hide();
+            $("#menu_contact").hide();
         });
         $("#m3").click(function(){
             $("#menu_home").hide();
             $("#menu_aboutme").hide();
             $("#menu_dasom").show();
-            $("#menu_bucket").hide();
+            $("#menu_contact").hide();
         });
         $("#m4").click(function(){
             $("#menu_home").hide();
             $("#menu_aboutme").hide();
             $("#menu_dasom").hide();
-            $("#menu_bucket").show();
+            $("#menu_contact").show();
         });
     });
 </script>
@@ -85,7 +85,7 @@ $(document).ready(function(){
         <li id = "m1"><a href="#Home">Home</a></li>
         <li id="m2"><a href="#About">About Me</a></li>
         <li id="m3"><a href="#Dasom">Dasom</a></li>
-        <li id="m4"><a href="#Bucket">Bucket List</a></li>
+        <li id="m4"><a href="#Contact">Contact</a></li>
     </ul>
        <div class="burger">
         <div class="line1"></div>
@@ -97,20 +97,21 @@ $(document).ready(function(){
 <div id = "menu_home" display="">
     <div class = "bs-docs-section">
         <div class = "container">
-        <h1 id = "Home">Home</h1>
+        <h1 id = "Home">Home </h1>
             <div class = "row">
                     <div class = "col-md-4">
-                        <img class = "imga" src ="./profile.jpg" alt = "profile" width="400px">
+                        <img class = "imga" src ="./profile.jpg" alt = "profile" width="350px">
                     </div>
                     <div calss = "col-md-8">
                         <h2 id = "c" class = "subheading">self-introduction</h2>
-                            <p class="e">My friend drew a picture for me.</p>
+                            <p class="e">This picture was drawn by my friend</p>
                             <p class="e">I am a student majoring in computer engineering at Kangwon National University.</p>
-                            <p class="e">My goal is to become an artificial intelligence expert. 👩‍💻</p>
                             <p class="e">I was born and raised in Seoul.</p>     
-                            <p class="e">I can live well without feeling stuffy even if I don't go out of the house often.</p>
-                            <p class="e">I go to bed at 7 a.m. when it's time for others to wake up. 🛌</p> 
-                            <p  id = "a" class="e">I like animals (especially dogs) very much. 🐶</p>
+                            <p class="e">I like to stay at home.</p>
+                            <p class="e">I go to bed at 7 a.m. when it's time for others to wake up. </p> 
+                            <p class="e">I've been trying to go to bed at midnight for 5 years, but I haven't fixed it yet. </p>
+                            <p class="e">My strength is that I have good short-term memory, and my weakness is that I am timid.</p>
+                            <p  id = "a" class="e">I like animals (especially dogs) very much. </p>
                         <br>
                     </div>
             </div>
@@ -130,7 +131,7 @@ $(document).ready(function(){
                     <td>
                         <img class = "imga" src ="./KamomeDiner.jpg" alt = "Kamome Diner" width="200px">
                         <br>
-                        <h4 class="mv">🎬 Kamome Diner, かもめ食堂, 2006</h4>
+                        <h4 class="mv">🎬 Kamome Diner, かもめ食堂</h4>
                         <br>
                         <div class = "mvinfo">
                         <dl>
@@ -156,7 +157,7 @@ $(document).ready(function(){
                 <tr>
                     <td>
                         <img class = "imga" src = "./GreatestShowman.jpg" alt = "TheGreatestShowman" width="200px"></image>
-                        <h4 class="mv">🎬 The Greatest Showman, 2017</h4>
+                        <h4 class="mv">🎬 The Greatest Showman</h4>
                         <br>
                         <div class = "mvinfo">
                             <dl>
@@ -182,7 +183,7 @@ $(document).ready(function(){
                 <tr>
                     <td>
                         <img class = "imga" src = "./InsideOut.jpg" alt = "InsideOut" width="200px"></image>
-                        <h4 class="mv">🎬 Inside Out, 2015</h4>
+                        <h4 class="mv">🎬 Inside Out</h4>
                         <br>
                         <div class ="mvinfo">
                             <dl>
@@ -234,16 +235,32 @@ $(document).ready(function(){
             </tbody>
         </table>
         <h2 class="subheading">Specialty 👩‍🎨👩‍🔧</h2>
-        <p id="a" >I'm good at drawing. I am not good at drawing by thinking or creating things in my head, but I am good at drawing by looking at them. Especially, I am good at drawing characters like SpongeBob. Also, I like to make and assemble things. I liked to assemble Gundam or make something by myself since elementary school. Now that I think about it, it has nothing to do with my major.</p>
         <table>
             <tbody>
                 <tr>
                     <td>
-
+                        <p>I'm good at drawing. I am not good at drawing by thinking or creating things in my head, but I am good at drawing by looking at them. Especially, I am good at drawing characters like SpongeBob. Also, I like to make and assemble things. I liked to assemble Gundam or make something by myself since elementary school. Now that I think about it, it has nothing to do with my major. The pictures below are the ones I drew in the past.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class = "imga" src = "./picture1.jpg" alt = "picture" width="500px"></image>
+                        <img class = "imga" src = "./picture2.jpg" alt = "picture" width="500px"></image>
                     </td>
                 </tr>
             </tbody>
         </table>
+        <h2 class="subheading">Bucket List 📜</h2>
+        <ul class="a">
+            <li class="b">Around the World 🧳</li>
+            <li class="b">Learning musical instruments such as piano, violin, etc. 🎹🎻</li>
+            <li class="b">Playing discus with Dasom (Dasom is afraid of the disc) 🥏</li>
+            <li class="b">Paragliding 🪂</li>
+            <li class="b">Riding a Roller Coaster 🎢</li>
+            <li class="b">Swimming Without Tubes 🏊</li>
+            <li class="b">See the Aurora</li>
+            <li class="b">and so on ...</li>
+        </ul>
     </div>
 
 </div>
@@ -271,46 +288,76 @@ $(document).ready(function(){
                         <p class="d">Hobby : Eating, sleeping</p>
                         <p class="d">Favorite things : Dental Gum, toy with sound</p>
                         <br>
+                        <br>
+                        <br>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-            <h2 class = "subheading">Favorite pictures 📸</h2>
+            <h2 class = "subheading">Gallery</h2>
                 <div class="thumbs">
                     <img class="thumb" src="./Dasom2.JPG" data-img-src="./Dasom2.JPG" height="100">
                     <img class="thumb" src="./Dasom3.jpg" data-img-src="./Dasom3.jpg" width="100">
                     <img class="thumb" src="./Dasom4.jpg" data-img-src="./Dasom4.jpg" width="200">
-                    <img class="thumb" src="./Dasom5.jpg" data-img-src="./Dasom5.jpg" width="200">
                     <img class="thumb" src="./Dasom6.jpg" data-img-src="./Dasom6.jpg" width="200">
                     <img class="thumb" src="./Dasom7.jpg" data-img-src="./Dasom7.jpg" width="200">
                     <img class="thumb" src="./Dasom8.jpg" data-img-src="./Dasom8.jpg" width="200">
                     <img class="thumb" src="./Dasom9.jpg" data-img-src="./Dasom9.jpg" width="200">
                     <img class="thumb" src="./Dasom10.jpg" data-img-src="./Dasom10.jpg" width="200">
                     <img class="thumb" src="./Dasom11.jpg" data-img-src="./Dasom11.jpg" width="200">
-                    <p id="a"></p>
+                    <img class="thumb" src="./Dasom12.jpg" data-img-src="./Dasom12.jpg" width="200">
+                    <img class="thumb" src="./Dasom15.jpg" data-img-src="./Dasom15.jpg" width="200">
+                    <img class="thumb" src="./Dasom16.jpg" data-img-src="./Dasom16.jpg" width="200">
+                    <img class="thumb" src="./Dasom17.jpg" data-img-src="./Dasom17.jpg" width="200">
+                    <img class="thumb" src="./Dasom18.jpg" data-img-src="./Dasom18.jpg" width="200">
+                    <img class="thumb" src="./Dasom19.jpg" data-img-src="./Dasom19.jpg" width="200">
+                    <img class="thumb" src="./Dasom20.jpg" data-img-src="./Dasom20.jpg" width="200">
                 </div>
-
+                <div class=fp>
+                    <h2 class = "subheading">Favorite pictures 📸</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img class = "imga" src = "./Dasom24.jpg" alt = "Dasom" width="500px"></image>        
+                                    <img class = "imga" src = "./Dasom25.jpg" alt = "Dasom" width="500px"></image>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id ="w">The pictures above are so cute, but my favorite pictures are these two. It was the day Dasom was home alone after all the family members went out. Dasom was looking for food and opened the ramen on the kitchen shelf and hid it in her hiding place. And as soon as the hidden ramen is found, Dasom bites the ramen and runs away. Isn't this really cute?</p>
+                                    <p id="a"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>+) The hideout that Dasom thought of</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class = "imga" src = "./Dasom26.jpg" alt = "Dasom" width="400px"></image>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 </div>
 </div>
-<div id = "menu_bucket" style="display: none;">
+<div id = "menu_contact" style="display: none;">
 <div class = "bs-docs-section">
-        <h1 id = "Bucket">Bucket List 📜</h1>
-        <br>
-        <ul class="a">
-            <li class="b">Around the World 🧳</li>
-            <li class="b">Learning musical instruments such as piano, violin, etc. 🎹🎻</li>
-            <li class="b">Playing discus with Dasom (Dasom is afraid of the disc) 🥏</li>
-            <li class="b">Paragliding 🪂</li>
-            <li class="b">Riding a Roller Coaster 🎢</li>
-            <li class="b">Swimming Without Tubes 🏊</li>
-            <li class="b">See the Aurora</li>
-            <li class="b">and so on ...</li>
+        <h1 id = "Contact">Contact Info</h1>
+        <ul class="a">            
+            <li class="b"><a>mail : </a><a href="mailto:gmail@gmail.com">gmail@gmail.com</a></li>
+            <li class="b"><a>instagram : </a><a href="https://www.instagram.com/">@instagram</a></li>
+            <li class="b"><a>blog : </a><a href="http://blog.naver.com">http://blog.naver.com</a></li>
+            <li class="b"><a>youtube : </a><a href="https://www.youtube.com">https://www.youtube.com</a></li>
         </ul>
     </div>
 </div>
 <footer class="footer">
-    <p class="footer">@2021 Yeonyoung Huh. All rights reserved.</p>
+    <p class="footer">Copyright @ Yeonyoung Huh All rights reserved.</p>
 </footer>
 </body>
 </html>
